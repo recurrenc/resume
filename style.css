@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header style */
+
+.bound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100vw;
+  height: 100vh; */
+  background: #000;
+}
+
+.container {
+  padding: 0px 15px;
+  width: 730px;
+  /* height: 930px; */
+  background: #fff;
+}
+.header {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid rgb(141, 141, 133);
+}
+
+.profilePic {
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  z-index: 3;
+  border-radius: 50%;
+  border: 5px solid rgb(180, 180, 82);
+}
+
+.profilePic > img {
+  margin: auto;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  mask-image: cross-fade(#eee);
+}
+
+.profileDetails {
+  display: flex;
+  width: 550px;
+  height: 100%;
+}
+
+.details {
+  margin: 5px;
+  width: 300px;
+  height: 100%;
+}
+
+.details > .name {
+  letter-spacing: 4px;
+  font-size: 30px;
+  font-weight: 650;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(26, 49, 151);
+  border-bottom: 3px solid gray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.details > .role {
+  text-align: left;
+  color: rgb(3, 20, 99);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.socialDetails {
+  margin-top: 30px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-top: 5px;
+}
+
+.social > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: inherit;
+  text-align: center;
+}
+.social > img {
+  width: 30px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+/* Main Body style */
+
+.heading {
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  /* border-bottom: 2px solid blue; */
+  width: fit-content;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  background: rgb(196, 160, 160);
+}
+
+th {
+  color: blueviolet;
+}
+
+table,
+th,
+td {
+  border: 2px solid white;
+}
+
+th,
+td {
+  padding: 5px;
+  background: #fff;
+  text-align: center;
+}
+
+.certified {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.certified > .name {
+  color: rgb(88, 2, 168);
+  font-weight: bold;
+}
+.seperator {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(119, 87, 87);
+}
+.certified > .name {
+  padding: 5px;
+}
+.certified > .name > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.softSkills {
+  display: flex;
+}
+.softSkills > li {
+  padding: 0 10px;
+  width: max-content;
+  color: rgb(102, 84, 84);
+}
+
+.softSkills > li::marker {
+  color: blueviolet;
+  font-size: 19px;
+}
+
+.skill {
+  background: #575757;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gitstats {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gitstats > .streak > img {
+  width: 500px;
+}
+
+.gitstats > .badge > img {
+  height: 195px;
+}
+
+.gitstats > .mulang > img {
+  height: 225px;
+}
+
+.gitstats > .stats > img {
+  width: 460px;
+}
+
+.footer {
+  height: 20px;
+}
